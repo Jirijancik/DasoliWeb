@@ -17,4 +17,6 @@
 
 	/*Main Font*/
 	--MAIN-FONT: 'Roboto Condensed', sans-serif;
+	--BASE-FONT-SIZE: 16px;
+	--H3-SIZE: 1.5rem;
 }

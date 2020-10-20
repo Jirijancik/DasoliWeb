@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import './assets/variables.css'
+import '../assets/variables.css'
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap');
@@ -25,9 +25,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	color: var(--BLACK);
-	font: inherit;
+	font-size: var(--BASE-FONT-SIZE);
   vertical-align: baseline;
   font-family: var(--MAIN-FONT);
 }

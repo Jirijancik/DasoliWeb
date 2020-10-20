@@ -8,5 +8,23 @@
       "title":"Ipsum? convallis dui",
       "paragraph":"Aliquam volutpat purus eu massa vehicula tristique. Sed tincidunt felis vitae nisl condimentum efficitur. Maecenas sagittis ac leo vel dapibus. Sed lobortis, risus ."
     }
+  ],
+  "service":[
+    {
+      "title":"Účetnictví",
+      "items":["Daňová evidence", "Jednoduché účetnictví", "Účetnictví"]
+    },
+    {
+      "title":"Daňové poradenství",
+      "items":["Průběžné daňové poradenství", "Pomoc při daňových kontrolách", "Jednorázové daňové konzultace"]
+    },
+    {
+      "title":"Outsourcing mezd",
+      "items":["Zpracování mezd", "Personální poradenství"]
+    },
+    {
+      "title":"Školení",
+      "items":["Specializované učetnictví"]
+    }
   ]
 }
