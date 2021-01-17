@@ -5,18 +5,26 @@
 	--base_violet_code: 133, 65, 202;
 	--base_red_code: 229, 89, 52;
 	--base_green_code: 155, 197, 61;
+	--base_white_code: 255, 255, 255;
+	--base_orange_code: 218,165,32;
 
 	--BLUE: rgb(var(--base_blue_code));
 	--VIOLET: rgb(var(--base_violet_code));
 	--YELLOW: rgb(253, 231, 76);
 	--GREEN: rgb(var(--base_green_code));
 	--RED: rgb(var(--base_red_code));
-	--ORANGE: rgb(250, 121, 33);
+	--ORANGE: rgb(var(--base_orange_code));
 	--BLACK: rgb(var(--base_black_code));
-	--WHITE: rgb(255, 255, 255);
+	--WHITE: rgb(var(--base_white_code));
+
+	--WHITE_BACKGROUND: var(--WHITE);
+	--HERO-GRADIENT: linear-gradient(295deg, rgba(44,53,133,1) 0%, rgba(18,18,18,1) 100%);
+	--CARD-GRADIENT: linear-gradient(0deg, rgba(44,53,133,1) 0%, rgba(18,18,18,1) 60%);
+	--WHITE_PAPER_BACKGROUND: linear-gradient(295deg, rgb(26, 32, 80) 0%, rgba(18,18,18,1) 75%);
 
 	/*Main Font*/
 	--MAIN-FONT: 'Roboto Condensed', sans-serif;
 	--BASE-FONT-SIZE: 16px;
+	--H2-SIZE: 2rem;
 	--H3-SIZE: 1.5rem;
 }

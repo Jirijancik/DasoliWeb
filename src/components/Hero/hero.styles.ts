@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import imageSVG from '../../assets/images/HeroSVG.svg';
 
-export const HeroHeader = styled.header`
-  background: url(${imageSVG});
+export const HeroHeader = styled.div`
+  background: rgb(44,53,133);
+  background: var(--HERO-GRADIENT);
   height: 35rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position:relative;
+  overflow: hidden;
   box-shadow: 0px -3px 35px 5px rgba(var(--base_blue_code), .8), 
               0px -1px 15px 3px rgba(var(--base_black_code), .7);
 `
@@ -18,9 +21,10 @@ export const Wrapper = styled.section`
   height:100%;
   margin-left: 15vw;
   position: relative;
-
+  background-color: transparent;
   p{
     color: var(--WHITE);
+    background-color: inherit;
   }
 `
 export const Header = styled.h1`
@@ -30,12 +34,5 @@ export const Header = styled.h1`
   text-transform: uppercase;
   align-self: flex-end;
   color: var(--WHITE);
-`
-export const Image = styled.img`
-  position:absolute;
-  max-height: 35rem;
-  filter: drop-shadow(5px 0px 12px rgba(var(--base_black_code), .3));
-  top:0;
-  right:0;
-  box-shadow: 25px -3px 15px 4px rgba(var(--base_black_code), .6);
+  background-color: inherit;
 `

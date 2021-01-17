@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import Button from '../Button';
-import { buttonTypes, buttonSize } from '../Button/enum'
+import { buttonTypes, buttonSize } from '../Button/enum';
 import { 
   HeroHeader, 
   Wrapper, 
   Header, 
-  Image 
 } from './hero.styles'
-import image from '../../assets/images/facePNG.png';
+import {StyledImage} from './components/StyledImage'
+import image from '../../assets/images/pavla.png';
+import logo from '../../assets/images/logo.png';
 
 type HeroProps = {
   text: [{
@@ -49,13 +50,16 @@ const Hero: React.FC<HeroProps> = ({ text }) => {
         </p>
         <Button 
           buttonType = { buttonTypes.PRIMARY } 
-          size = { buttonSize.BIG }
+          size = { buttonSize.XXL }
           handleOnClick = { doLogicOnClick }
         >
           Zjisti víc
         </Button>
       </Wrapper>
-      <Image src = { image } alt = "Roman Šmodula"/>
+      
+
+      <StyledImage width={600} height={600} opacity={0.1} translateX="20%" mirrored={true} src = { logo } alt = "Dasoli Logo"/>
+      <StyledImage src = { image } alt = "Pavla Sojová"/>
     </HeroHeader>
   )
 };

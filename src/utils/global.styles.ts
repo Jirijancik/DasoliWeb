@@ -25,10 +25,11 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	color: var(--BLACK);
+	color: inherit;
 	font-size: var(--BASE-FONT-SIZE);
-  vertical-align: baseline;
-  font-family: var(--MAIN-FONT);
+ 	vertical-align: baseline;
+	font-family: var(--MAIN-FONT);
+	background-color: transparent;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -36,8 +37,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.15;
 	height:3500px; /**DELETE */
+	min-width: 450px;
 }
 ol, ul {
 	list-style: none;
