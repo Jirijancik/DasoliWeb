@@ -17,9 +17,9 @@ const AboutUsSection:React.FC<IAboutUsSection> = () => {
     <>
     <Paper>
       <Title title="O Nás" size={titleSize.H2}/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+      <p>Pavla Sojová se pyšní nemalou zkušeností, ve finančním sektoru působí již od roku 1993. V roce 2008 se rozhodla založit firmu DASOLI v návaznosti na svou účetní a daňovou praxi. 
+        Pavla Sojová sdílí s týmem 6 profesionálů, kteří jsou vyškolení, aby řešili individuální potřeby podnikatelů z řady různých oborů. 
+        Zvládáme pokrýt široké portfolio firem, důkazem je přes 80 stálých spokojených klientů – od akciovek až po neziskovky.
       </p>
     </Paper>
       
