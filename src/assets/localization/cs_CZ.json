@@ -31,8 +31,9 @@
       "content":"Nabízíme školení v oblasti účetnictví a daní, rádi se podělíme o své zkušenosti a znalosti. Školení jsou šitá na míru podle požadavků našich klientů, abychom docílili co nejlepších výsledků a předali opravdu užitečné informace. Pokud jste z oboru a potřebujte poradit se specifickým problémem, neváhejte využít i našich individuálních konzultací."
     }
   ],
-  "clients": [
-    {
+  "clients": {
+    "title": "Naši klienti",
+    "reviews":[{
       "id": 1,
       "citationText": "I had a difficult time tracking what was business expenses vs. what was personal. I also like to leave everything to the last minute. I was in a bind and I called UDTH Accounting. They were able to back track for the entire year and provide my accountant with something to work with. Thanks!",
       "personName": "Karl Terry",
@@ -67,7 +68,7 @@
       "personDescription": "Developer",
       "personImageUrl": "assets/images/clientAvatars/manTwo.png"
     }
-  ],
+  ]},
   "counts": [
     {
       "id": "001",
@@ -99,5 +100,33 @@
       "number": "68",
       "duration": "4"
     }
-  ]
+  ],  
+  "faq": {
+    "title": "FAQ",
+    "items":[{
+      "answer": "I had a difficult time tracking what was business e",
+      "id": 1,
+      "question": "Kde vzit peníze"
+    },    
+    {
+      "answer": "I  like to leave everything to the last minute.ey were able to back track for the enti Thanks!",
+      "id": 2,
+      "question": "Mám si koupit auto?"
+    },    
+    {
+      "answer": "ave everything to the last minute. I was rack for the entire year and provide my acch something to work with. Thanks!",
+      "id": 3,
+      "question": "Mužu vzít sebou kočku?"
+    },  
+    {
+      "answer": "I had a difficult time tracking what was business expenses vs. what was personal. I also like to leave everything to the last minute. I was in a bind and I called UDTH Accounting. They were able to back track for the entire year and provide my accountant with something to work with. Thanks!",
+      "id": 4,
+      "question": "Telefonujeme spolu kolem světa"
+    }, 
+    {
+      "answer": "was in a biork with. Thanks!",
+      "id": 5,
+      "question": "Kdo si koupi kolo?"
+    }
+  ]}
 }

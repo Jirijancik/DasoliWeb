@@ -17,7 +17,9 @@ export const StyledCard = styled.button`
   justify-content: center;
   justify-items: center;
   transition: filter 0.5s ease;
+  outline-color: var(--ORANGE);
   cursor: pointer;
+
   & svg {
     height: 55px;
     fill: var(--ORANGE);
@@ -38,7 +40,7 @@ export const StyledCard = styled.button`
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -52,6 +54,7 @@ export const StyledCard = styled.button`
 
   &:hover::after {
     opacity: 1;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-
 `

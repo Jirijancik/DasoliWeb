@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Hero from './components/Hero';
-import Accordeon from './components/Accordeon';
 import Map from './components/Map';
 import { GlobalStyle } from './utils/global.styles';
 import { InlineGridWrapper } from './utils/wrapper.styles';
@@ -13,6 +12,7 @@ import CounterSection from "./views/sections/counterSection/CounterSection";
 
 
 import ServiceSection from "./views/sections/servicesSection/ServiceSection";
+import FaqSection from 'views/sections/faqSection/FaqSection';
 
 let text = require('./assets/localization/cs_CZ.json');
 
@@ -26,9 +26,9 @@ const App = () => {
           <Hero text={ text.hero }/>
           <ServiceSection/>
           <AboutUsSection/>
-          <ClientsSection text={text.clients}/>
+          <ClientsSection data={text.clients}/>
           <CounterSection />
-          <Accordeon />
+          <FaqSection />
           <Map />
       </div>
     </React.Fragment>

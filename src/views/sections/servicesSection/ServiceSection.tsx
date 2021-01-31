@@ -53,12 +53,12 @@ const ServiceSection = () => {
   useEffect(() => {
     setAnimation(
     TweenMax.from(cardsRef.current, {  
-      duration: .9,
-      scale: 0.7, 
+      duration: .8,
+      scale: 0.75, 
       opacity: 0, 
-      delay: 0.15, 
-      stagger: 0.09,
-      ease: "power2", 
+      delay: 0.12, 
+      stagger: 0.08,
+      ease: Power3.easeOut, 
     }))
   }, [cardsRef])
 

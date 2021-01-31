@@ -9,10 +9,14 @@ import {TweenMax, gsap} from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 interface IClientsSection {
-  text: IText[]
+  data: IData
+}
+interface IData {
+  title: string
+  reviews: Review[]
 }
 
-interface IText {
+interface Review {
   id: number,
   citationText:string,
   personName:string,
@@ -20,7 +24,11 @@ interface IText {
   personImageUrl: string
 }
 
-const ClientsSection:React.FC<IClientsSection> = ({text}) => {
+const ClientsSection:React.FC<IClientsSection> = ({data}) => {
+  const {
+    title,
+    reviews,
+  } = data;
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -43,12 +51,11 @@ const ClientsSection:React.FC<IClientsSection> = ({text}) => {
 
   return(
     <div>
-      <Title title="Naši Klienti" size={titleSize.H2}/>
+      <Title title={title} size={titleSize.H2}/>
       <InlineGridWrapper ref={el => cardsRef = el}>
-        {text.map( item => {
+        {reviews.map( item => {
           const image = require('../../../' + item.personImageUrl);
-          console.log(image)
-          return <Citation  citationText={item.citationText} personName={item.personName} key={item.id} personDescription={item.personDescription} personImageUrl={image}/>
+          return <Citation  citationText={item.citationText} personName={item.personName} key={item.id} personDescription={item.personDescription} personImageUrl={image.default}/>
         })}
       </InlineGridWrapper>
     </div>

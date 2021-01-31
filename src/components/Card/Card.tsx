@@ -5,12 +5,8 @@ import { StyledCardDetail } from './components/StyledCardDetail';
 import { StyledContentWrapper } from './components/StyledContentWrapper';
 import Title from "../Title";
 import { titleSize } from "../Title/title.styles";
-import { buttonTypes, buttonSize } from '../Button/enum'
-import Button from "../Button";
+import {TweenMax, Power3} from 'gsap';
 
-
-import {TweenMax, gsap, Power3} from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger'
 
 
 export interface ICardProps {
@@ -26,13 +22,11 @@ export const Card = React.forwardRef<HTMLButtonElement, ICardProps>(
 
   const [isShowingDetail, setIsShowingDetail] = useState(false);
   const [showAnimation, setShowAnimation] = useState<any>(null);
-  const [hideAnimation, setHideAnimation] = useState<any>(null);
 
   let cardDetailRef = useRef(null) as any;
 
-  let doLogicOnClick = () => {
+  let handleOnClick = () => {
     setIsShowingDetail(!isShowingDetail);
-    
   }
 
 
@@ -59,7 +53,7 @@ export const Card = React.forwardRef<HTMLButtonElement, ICardProps>(
   return (
     <StyledCard 
       ref={ref}
-      onClick={ doLogicOnClick } 
+      onClick={ handleOnClick } 
     >
     {(!isShowingDetail && <StyledContentWrapper >
       {svgItem}

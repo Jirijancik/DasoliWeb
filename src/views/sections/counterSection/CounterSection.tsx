@@ -1,31 +1,19 @@
 import React, {useRef, useEffect, useState, useCallback} from 'react';
-
-import Hero from '../../../components/Hero';
 import Counter from '../../../components/Counter';
-import { GlobalStyle } from '../../../utils/global.styles';
 import { InlineGridWrapper } from '../../../utils/wrapper.styles';
 import Paper from '../../../components/Paper';
-import Title from '../../../components/Title';
-import MoneySvg from '../../../assets/images/svgAssets/MoneySvg';
-import AccountingSvg from '../../../assets/images/svgAssets/AccountingSvg';
-import TaxSvg from '../../../assets/images/svgAssets/TaxSvg';
-import SalarySvg from '../../../assets/images/svgAssets/SalarySvg';
-import EducationSvg from '../../../assets/images/svgAssets/EducationSvg';
 
 let text = require('../../../assets/localization/cs_CZ.json');
 
-interface ICounterSection {
- 
-}
 
 interface ICountItem {
-  id: "001",
-  label: "A Really Big Number",
-  number: "900000",
-  duration: "2"
+  id: string,
+  label: string,
+  number: string,
+  duration: string
 }
 
-const CounterSection:React.FC<ICounterSection> = () => {
+const CounterSection:React.FC = () => {
 
   const hiddenRef = useRef() as React.MutableRefObject<HTMLDivElement>;
 
