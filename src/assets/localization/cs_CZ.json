@@ -9,22 +9,26 @@
     {
       "id":"accounting",
       "title":"Účetnictví",
-      "items":["Daňová evidence", "Jednoduché účetnictví", "Účetnictví"]
+      "items":["Daňová evidence", "Jednoduché účetnictví", "Účetnictví"],
+      "content": "Zpracováváme účetní a daňové evidence, komplexně, od A do Z. Veškerou administrativu si bereme pod svá křídla. Můžete se proto zaměřit na své podnikání a nemarnit čas papírováním – uděláme ho za vás. Neváhejte se na nás obrátit také v případě složitějších účetních případů. Rádi vám poskytneme individuální metodické konzultace."
     },
     {
       "id":"tax",
       "title":"Daňové poradenství",
-      "items":["Průběžné daňové poradenství", "Pomoc při daňových kontrolách", "Jednorázové daňové konzultace"]
+      "items":["Průběžné daňové poradenství", "Pomoc při daňových kontrolách", "Jednorázové daňové konzultace"],
+      "content": "Daňové poradenství nám není cizí – základem je individuální přístup, konzultace proto probíhají dle potřeb klienta. Pokud řešíte jednorázový problém, neváhejte se ozvat. Nabízíme jednorázové konzultace, kde s vámi vše dopodrobna probereme."
     },
     {
       "id":"salary",
       "title":"Outsourcing mezd",
-      "items":["Zpracování mezd", "Personální poradenství"]
+      "items":["Zpracování mezd", "Personální poradenství"],
+      "content":"I v této specifické oblasti si víme rady, provádíme kvalifikované zpracování formou outsourcingu. Klademe vysoké nároky na zabezpečení dat a zachování soukromí našich klientů."
     },
     {
       "id":"education",
       "title":"Školení",
-      "items":["Specializované učetnictví"]
+      "items":["Specializované učetnictví"],
+      "content":"Nabízíme školení v oblasti účetnictví a daní, rádi se podělíme o své zkušenosti a znalosti. Školení jsou šitá na míru podle požadavků našich klientů, abychom docílili co nejlepších výsledků a předali opravdu užitečné informace. Pokud jste z oboru a potřebujte poradit se specifickým problémem, neváhejte využít i našich individuálních konzultací."
     }
   ],
   "clients": [

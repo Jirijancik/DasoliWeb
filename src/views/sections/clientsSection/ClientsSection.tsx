@@ -28,16 +28,15 @@ const ClientsSection:React.FC<IClientsSection> = ({text}) => {
   cardsRef.current = [];
 
   useEffect(() => {
-    console.log(cardsRef)
     ScrollTrigger.defaults({
       toggleActions: "play none none none"
     });
     
     gsap.from(cardsRef, {
       scrollTrigger:cardsRef, 
-      duration: 2, 
+      duration: 1.5, 
       opacity: 0.3,
-      y: -30,
+      y: -20,
       scale: .95
     });
   }, [])
@@ -48,6 +47,7 @@ const ClientsSection:React.FC<IClientsSection> = ({text}) => {
       <InlineGridWrapper ref={el => cardsRef = el}>
         {text.map( item => {
           const image = require('../../../' + item.personImageUrl);
+          console.log(image)
           return <Citation  citationText={item.citationText} personName={item.personName} key={item.id} personDescription={item.personDescription} personImageUrl={image}/>
         })}
       </InlineGridWrapper>

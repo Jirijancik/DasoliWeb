@@ -1,40 +1,80 @@
-import React, {forwardRef, useEffect} from 'react';
-import { CardStyle } from './card.styles';
+import React, {useRef, useEffect, useState} from 'react';
+import { StyledCard } from './components/card.styles';
+import { StyledCardList } from './components/StyledCardList';
+import { StyledCardDetail } from './components/StyledCardDetail';
+import { StyledContentWrapper } from './components/StyledContentWrapper';
 import Title from "../Title";
 import { titleSize } from "../Title/title.styles";
 import { buttonTypes, buttonSize } from '../Button/enum'
 import Button from "../Button";
 
 
+import {TweenMax, gsap, Power3} from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+
 export interface ICardProps {
   title: string,
   items: string[],
   svgItem: React.ReactNode,
+  content: string,
 }
 
-export const Card = React.forwardRef<HTMLDivElement, ICardProps>(
+export const Card = React.forwardRef<HTMLButtonElement, ICardProps>(
   (props, ref) => {
-  let {title, items, svgItem} = props;
-  let doLogicOnClick = () => console.log("....code logic....");
+  let {title, items, svgItem, content} = props;
+
+  const [isShowingDetail, setIsShowingDetail] = useState(false);
+  const [showAnimation, setShowAnimation] = useState<any>(null);
+  const [hideAnimation, setHideAnimation] = useState<any>(null);
+
+  let cardDetailRef = useRef(null) as any;
+
+  let doLogicOnClick = () => {
+    setIsShowingDetail(!isShowingDetail);
+    
+  }
+
+
+  useEffect(() => {
+    setShowAnimation(
+    TweenMax.fromTo(cardDetailRef, .8,{  
+      opacity: 0, 
+      ease: Power3.easeOut, 
+    },  {  
+      opacity: 1, 
+      ease: Power3.easeOut, 
+    }).pause())
+  }, [cardDetailRef])
+  
+ 
+  
+  useEffect(() => {
+    if(isShowingDetail){
+      showAnimation?.restart();
+    }
+    
+  }, [isShowingDetail, showAnimation])
 
   return (
-    <CardStyle ref = {ref}>
+    <StyledCard 
+      ref={ref}
+      onClick={ doLogicOnClick } 
+    >
+    {(!isShowingDetail && <StyledContentWrapper >
       {svgItem}
-      <span>
-        <Title title={title} size={titleSize.H3}></Title>
+      <span >
+        <Title title={title}  size={titleSize.H3}></Title>
       </span>
-      <ul>
+      <StyledCardList>
         {items.map(<T extends string>(item: T) => {
           return <li key={item}>{item}</li>
         })}
-      </ul>
-      <Button 
-          buttonType = { buttonTypes.PRIMARY } 
-          size = { buttonSize.BIG }
-          handleOnClick = { doLogicOnClick }
-        >
-          Zjisti víc
-      </Button>
-    </CardStyle>
+      </StyledCardList>
+    </StyledContentWrapper>)}
+
+    {<StyledCardDetail ref={el => cardDetailRef = el} isShowingDetail={isShowingDetail}>{content}</StyledCardDetail>}
+
+    </StyledCard>
   )
 })

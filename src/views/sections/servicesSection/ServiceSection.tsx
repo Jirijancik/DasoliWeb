@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, MutableRefObject} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 
 import Hero from '../../../components/Hero';
 import {Card} from '../../../components/Card';
@@ -12,7 +12,7 @@ import TaxSvg from '../../../assets/images/svgAssets/TaxSvg';
 import SalarySvg from '../../../assets/images/svgAssets/SalarySvg';
 import EducationSvg from '../../../assets/images/svgAssets/EducationSvg';
 
-import {TweenMax, gsap} from 'gsap'
+import {TweenMax, gsap, Power3} from 'gsap'
 
 let text = require('../../../assets/localization/cs_CZ.json');
 
@@ -27,6 +27,7 @@ interface IServiceCardItem {
   id: string,
   title: string,
   items:string[],
+  content:string,
 }
 
 let SVGS:ISVGS = {
@@ -41,6 +42,8 @@ const ServiceSection = () => {
   let cardsRef = useRef() as any;
   cardsRef.current = [];
 
+  const [animation, setAnimation] = useState<any>(null);
+
   const addToRefs = (el: any) => {
     if (el && cardsRef && !cardsRef.current.includes(el)) {
       cardsRef.current.push(el);
@@ -48,23 +51,24 @@ const ServiceSection = () => {
   };
 
   useEffect(() => {
-    console.log(cardsRef)
-    gsap.from(cardsRef.current, {  
+    setAnimation(
+    TweenMax.from(cardsRef.current, {  
       duration: .9,
       scale: 0.7, 
       opacity: 0, 
       delay: 0.15, 
       stagger: 0.09,
       ease: "power2", 
-    })
-  }, [])
+    }))
+  }, [cardsRef])
+
 
   return(
     <>
       <Title title="Služby" size={titleSize.H2}/>
       <InlineGridWrapper >
         {text.service.map((item:IServiceCardItem) => 
-          <Card ref= {addToRefs}  key={item.id} title={item.title} items={item.items} svgItem={SVGS[item.id as keyof ISVGS]} />
+          <Card ref={addToRefs} key={item.id} title={item.title} items={item.items} svgItem={SVGS[item.id as keyof ISVGS]} content={item.content} />
         )}
       </InlineGridWrapper>
     </>
