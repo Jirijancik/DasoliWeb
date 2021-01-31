@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DasoliWeb/static/css/main.78fcfffc.chunk.css",
-    "main.js": "/DasoliWeb/static/js/main.bde5e871.chunk.js",
-    "main.js.map": "/DasoliWeb/static/js/main.bde5e871.chunk.js.map",
+    "main.css": "/DasoliWeb/static/css/main.6e4420d1.chunk.css",
+    "main.js": "/DasoliWeb/static/js/main.b1188bc0.chunk.js",
+    "main.js.map": "/DasoliWeb/static/js/main.b1188bc0.chunk.js.map",
     "runtime-main.js": "/DasoliWeb/static/js/runtime-main.71b04b45.js",
     "runtime-main.js.map": "/DasoliWeb/static/js/runtime-main.71b04b45.js.map",
-    "static/js/2.864b6ab6.chunk.js": "/DasoliWeb/static/js/2.864b6ab6.chunk.js",
-    "static/js/2.864b6ab6.chunk.js.map": "/DasoliWeb/static/js/2.864b6ab6.chunk.js.map",
+    "static/js/2.1dc806b3.chunk.js": "/DasoliWeb/static/js/2.1dc806b3.chunk.js",
+    "static/js/2.1dc806b3.chunk.js.map": "/DasoliWeb/static/js/2.1dc806b3.chunk.js.map",
     "index.html": "/DasoliWeb/index.html",
-    "static/css/main.78fcfffc.chunk.css.map": "/DasoliWeb/static/css/main.78fcfffc.chunk.css.map",
-    "static/js/2.864b6ab6.chunk.js.LICENSE.txt": "/DasoliWeb/static/js/2.864b6ab6.chunk.js.LICENSE.txt",
+    "static/css/main.6e4420d1.chunk.css.map": "/DasoliWeb/static/css/main.6e4420d1.chunk.css.map",
+    "static/js/2.1dc806b3.chunk.js.LICENSE.txt": "/DasoliWeb/static/js/2.1dc806b3.chunk.js.LICENSE.txt",
     "static/media/Group 1.svg": "/DasoliWeb/static/media/Group 1.b896ea39.svg",
     "static/media/HeroSVG.svg": "/DasoliWeb/static/media/HeroSVG.b5249526.svg",
     "static/media/IMG_6580.jpeg": "/DasoliWeb/static/media/IMG_6580.0ad806a2.jpeg",
@@ -213,8 +213,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.71b04b45.js",
-    "static/js/2.864b6ab6.chunk.js",
-    "static/css/main.78fcfffc.chunk.css",
-    "static/js/main.bde5e871.chunk.js"
+    "static/js/2.1dc806b3.chunk.js",
+    "static/css/main.6e4420d1.chunk.css",
+    "static/js/main.b1188bc0.chunk.js"
   ]
 }
