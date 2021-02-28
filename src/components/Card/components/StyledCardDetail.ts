@@ -7,6 +7,6 @@ interface IStyledCardDetail {
 export const StyledCardDetail = styled.div<IStyledCardDetail>`
     place-self: center;
     color: ${({isShowingDetail}) => isShowingDetail ? "inherit" : "transparent"};
-    height: ${({isShowingDetail}) => isShowingDetail ? "100%" : "0px"};
+    height: ${({isShowingDetail}) => isShowingDetail ? "auto" : "0px"};
     overflow: hidden;
 `

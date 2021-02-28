@@ -10,7 +10,7 @@ type IAccordeonProps = {
   }]
 }
 
-export const Accordeon: React.FC<IAccordeonProps> = ({items}) => {  
+const Accordeon: React.FC<IAccordeonProps> = ({items}) => {  
   const [value, setValue] = useState(items[0]?.question);
 
   const handleOnClick = (e:React.MouseEvent<HTMLInputElement>) =>{

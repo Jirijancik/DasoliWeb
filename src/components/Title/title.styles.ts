@@ -4,6 +4,7 @@ export enum titleSize {
   H1 = "H1",
   H2 = "H2",
   H3 = "H3",
+  H4 = "H4"
 }
 
 export interface IStyledTitle {
@@ -18,6 +19,8 @@ const getTitleSize = (size: titleSize) => {
       return "var(--H2-SIZE)";
     case titleSize.H3:
       return "var(--H3-SIZE)";
+    case titleSize.H4:
+      return "var(--H4-SIZE)";
     default:
       throw new Error("There was a problem with title size");
   }
@@ -28,7 +31,7 @@ export const StyledTitle = styled.h2<IStyledTitle>`
   font-size: ${({size}) => size && getTitleSize(size)};
   position: relative; 
   display: inline-block;
-  margin: 15px 0px;
+  margin: 35px 0px;
   &::after{
     content: "";
     position: absolute;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import imageSVG from '../../assets/images/HeroSVG.svg';
 
 export const HeroHeader = styled.div`
+margin-top: var(--NAVBAR-HEIGHT);
   background: rgb(44,53,133);
   background: var(--HERO-GRADIENT);
   height: 35rem;

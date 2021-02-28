@@ -1,11 +1,15 @@
 import React from 'react';
 import { PaperStyled } from './paper.styles';
 
-const Paper: React.FC = ( props ) => {
-  const { children } = props;
+type IPaperProps = {
+  readonly id?: string;
+}
+
+const Paper: React.FC<IPaperProps> = ( props ) => {
+  const { children, id } = props;
   
   return (
-    <PaperStyled>
+    <PaperStyled id={id}>
       { children }
     </PaperStyled>
   )

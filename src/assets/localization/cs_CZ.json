@@ -1,38 +1,48 @@
 {
-  "hero":[
-    {
-      "title":"Vaše daně, naše práce!",
-      "paragraph":"Patříme k nevětším odborníkům na daně a učetnictví v Moravskoslzeském kraji!"
-    }
-  ],
-  "service":[
-    {
-      "id":"accounting",
-      "title":"Účetnictví",
-      "items":["Daňová evidence", "Jednoduché účetnictví", "Účetnictví"],
-      "content": "Zpracováváme účetní a daňové evidence, komplexně, od A do Z. Veškerou administrativu si bereme pod svá křídla. Můžete se proto zaměřit na své podnikání a nemarnit čas papírováním – uděláme ho za vás. Neváhejte se na nás obrátit také v případě složitějších účetních případů. Rádi vám poskytneme individuální metodické konzultace."
-    },
-    {
-      "id":"tax",
-      "title":"Daňové poradenství",
-      "items":["Průběžné daňové poradenství", "Pomoc při daňových kontrolách", "Jednorázové daňové konzultace"],
-      "content": "Daňové poradenství nám není cizí – základem je individuální přístup, konzultace proto probíhají dle potřeb klienta. Pokud řešíte jednorázový problém, neváhejte se ozvat. Nabízíme jednorázové konzultace, kde s vámi vše dopodrobna probereme."
-    },
-    {
-      "id":"salary",
-      "title":"Outsourcing mezd",
-      "items":["Zpracování mezd", "Personální poradenství"],
-      "content":"I v této specifické oblasti si víme rady, provádíme kvalifikované zpracování formou outsourcingu. Klademe vysoké nároky na zabezpečení dat a zachování soukromí našich klientů."
-    },
-    {
-      "id":"education",
-      "title":"Školení",
-      "items":["Specializované učetnictví"],
-      "content":"Nabízíme školení v oblasti účetnictví a daní, rádi se podělíme o své zkušenosti a znalosti. Školení jsou šitá na míru podle požadavků našich klientů, abychom docílili co nejlepších výsledků a předali opravdu užitečné informace. Pokud jste z oboru a potřebujte poradit se specifickým problémem, neváhejte využít i našich individuálních konzultací."
-    }
-  ],
+  "hero":
+  {
+    "id": "dasoli",
+    "heroTitle":"Vaše daně, naše práce!",
+    "paragraph":"Patříme k osvědčeným odborníkům na daně a učetnictví v Moravskoslzeském kraji!"
+  },
+  "service":{
+    "title": "Služby",
+    "id": "services",
+    "services": [
+      {
+        "id":"accounting",
+        "title":"Účetnictví",
+        "items":["Daňová evidence", "Jednoduché účetnictví", "Účetnictví"],
+        "content": "Zpracováváme účetní a daňové evidence, komplexně, od A do Z. Veškerou administrativu si bereme pod svá křídla. Můžete se proto zaměřit na své podnikání a nemarnit čas papírováním – uděláme ho za vás. Neváhejte se na nás obrátit také v případě složitějších účetních případů. Rádi vám poskytneme individuální metodické konzultace."
+      },
+      {
+        "id":"tax",
+        "title":"Daňové poradenství",
+        "items":["Zastupovaní při daňových kontrolách ", "Jednání se státní správou", "Zastupování u soudu", "Zpracovávání daňových přitnání"],
+        "content": "Daňové poradenství nám není cizí – preferujeme individuální přístup, konzultace proto probíhají dle potřeb klienta. Pokud řešíte jednorázový problém, neváhejte se ozvat. Nabízíme jednorázové konzultace, nebo trvalou spolupráci. Vše s vámi dopodrobna probereme."
+      },
+      {
+        "id":"salary",
+        "title":"Outsourcing mezd",
+        "items":["Zpracování mezd", "Personální poradenství"],
+        "content":"I v této specifické oblasti si víme rady, provádíme kvalifikované zpracování formou outsourcingu. Klademe vysoké nároky na zabezpečení dat a zachování soukromí našich klientů. Sledování legislativy je samozřejmostí, o důležitém vývoji své klienty průběžně informujeme."
+      },
+      {
+        "id":"education",
+        "title":"Školení",
+        "items":["Lektorská činnost na specifická témata", "Možnost online školení", "Pravidelná setkávání klubu účetních"],
+        "content":"Nabízíme školení v oblasti účetnictví a daní, rádi se podělíme o své zkušenosti a znalosti. Školení jsou šitá na míru podle požadavků našich klientů, abychom docílili co nejlepších výsledků a předali opravdu užitečné informace. Pokud jste z oboru a potřebujte poradit se specifickým problémem, neváhejte využít i našich individuálních konzultací."
+      }
+    ]
+  },
+  "aboutUs": {
+    "title": "O Nás",
+    "id":"aboutUs",
+    "text": "Pavla Sojová se pyšní nemalou zkušeností, ve finančním sektoru působí již od roku 1993. V roce 2008 se rozhodla založit firmu DASOLI v návaznosti na svou účetní a daňovou praxi. Pavla Sojová sdílí s týmem 6 profesionálů, kteří jsou vyškolení, aby řešili individuální potřeby podnikatelů z řady různých oborů. Zvládáme pokrýt široké portfolio firem, důkazem je přes 80 stálých spokojených klientů – od akciovek až po neziskovky."
+  },
   "clients": {
     "title": "Naši klienti",
+    "id": "clients",
     "reviews":[{
       "id": 1,
       "citationText": "I had a difficult time tracking what was business expenses vs. what was personal. I also like to leave everything to the last minute. I was in a bind and I called UDTH Accounting. They were able to back track for the entire year and provide my accountant with something to work with. Thanks!",
@@ -74,25 +84,25 @@
       "id": "001",
       "label": "Klientů",
       "number": "276",
-      "duration": "4"
+      "duration": "3"
     },
     {
       "id": "002",
       "label": "Měst",
       "number": "3",
-      "duration": "2"
+      "duration": "4"
     },
     {
       "id": "003",
       "label": "Let",
       "number": "12",
-      "duration": "2"
+      "duration": "4"
     },
     {
       "id": "004",
       "label": "Faktur",
       "number": "52800",
-      "duration": "4"
+      "duration": "2"
     },
     {
       "id": "005",
@@ -103,30 +113,21 @@
   ],  
   "faq": {
     "title": "FAQ",
+    "id":"faq",
     "items":[{
-      "answer": "I had a difficult time tracking what was business e",
+      "answer": "Kompenzační bonus je od daně osvobozen. Dotační tituly např. Covid nájem, Covid gastro a příspěvky Antivirus jsou předmětem daně a zahrnují se do výsledku hospodaření. ",
       "id": 1,
-      "question": "Kde vzit peníze"
+      "question": "Podléhají zdanění náhrady škody v souvislosti s covidovými opatřeními?"
     },    
     {
-      "answer": "I  like to leave everything to the last minute.ey were able to back track for the enti Thanks!",
+      "answer": "Osoby podávající přiznání elektronicky mají termín do 1.5.2021. Osoby podávající přiznání písemně termín do 1.4. 2021. Osoby, které zastupuje daňový poradce mají termín do 30.6.2021. ",
       "id": 2,
-      "question": "Mám si koupit auto?"
+      "question": "V jakých termínech se bude v roce 2021 podávat daňové přiznání k dani z příjmu?"
     },    
     {
-      "answer": "ave everything to the last minute. I was rack for the entire year and provide my acch something to work with. Thanks!",
+      "answer": "Od 1.7.2020 došlo k zpřísnění prokazování podmínek při vývozu zboží do EU. Je nutno dokládat 2 různé listinné důkazy (např. přepravní doklad CMR, čestné prohlášení kupujícího z EU, doklad o zaplacení přepravy do EU apod.) ",
       "id": 3,
-      "question": "Mužu vzít sebou kočku?"
-    },  
-    {
-      "answer": "I had a difficult time tracking what was business expenses vs. what was personal. I also like to leave everything to the last minute. I was in a bind and I called UDTH Accounting. They were able to back track for the entire year and provide my accountant with something to work with. Thanks!",
-      "id": 4,
-      "question": "Telefonujeme spolu kolem světa"
-    }, 
-    {
-      "answer": "was in a biork with. Thanks!",
-      "id": 5,
-      "question": "Kdo si koupi kolo?"
+      "question": "Jakým způsobem je nutno prokázat vyvezení zboží do EU?"
     }
   ]}
 }

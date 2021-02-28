@@ -3,14 +3,15 @@ import { StyledTitle, StyledWrapper, titleSize} from './title.styles';
 
 type titleProps = {
   title: string,
-  size: titleSize
+  size: titleSize,
+  id?: string,
 }
 
-const Title: React.FC<titleProps> = ({title, size}) => {
+const Title: React.FC<titleProps> = ({title, size, id}) => {
   const titleText = title.toUpperCase()
   return (
     <StyledWrapper>
-      <StyledTitle size={size}>{titleText}</StyledTitle>
+      <StyledTitle size={size} id={id}>{titleText}</StyledTitle>
     </StyledWrapper>
   )
 }

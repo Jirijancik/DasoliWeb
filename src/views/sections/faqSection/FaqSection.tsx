@@ -4,23 +4,28 @@ import Title from '../../../components/Title';
 import { titleSize } from "../../../components/Title/title.styles";
 
 
-let text = require('../../../assets/localization/cs_CZ.json');
 
 
-interface ICountItem {
-  id: string,
-  label: string,
-  number: string,
-  duration: string
+type HeroProps = {
+  data: {
+    title: string,
+    heroTitle: string,
+    paragraph:string,
+    id:string,
+      items: [{
+        answer: string;
+        id: number;
+        question: string;
+    }],
+  };
 }
 
-const FaqSection:React.FC = () => {
-
+const FaqSection:React.FC<HeroProps> = ({data}) => {
 
   return(
     <>
-      <Title title={text.faq.title} size={titleSize.H2}/>
-      <Accordeon items={text.faq.items} />
+      <Title title={data.title} size={titleSize.H2} id={data.id}/>
+      <Accordeon items={data.items} />
     </>
   )
 }

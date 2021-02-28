@@ -14,8 +14,6 @@ import EducationSvg from '../../../assets/images/svgAssets/EducationSvg';
 
 import {TweenMax, gsap, Power3} from 'gsap'
 
-let text = require('../../../assets/localization/cs_CZ.json');
-
 interface ISVGS {
   accounting: React.ReactNode,
   tax: React.ReactNode,
@@ -37,7 +35,17 @@ let SVGS:ISVGS = {
   education: <EducationSvg/>,
 }
 
-const ServiceSection = () => {
+
+type HeroProps = {
+  data: {
+    title: string,
+    id: string,
+    services: any[],
+    paragraph:string,
+  };
+}
+
+const ServiceSection: React.FC<HeroProps> = ({data}) => {
 
   let cardsRef = useRef() as any;
   cardsRef.current = [];
@@ -62,16 +70,17 @@ const ServiceSection = () => {
     }))
   }, [cardsRef])
 
+  console.log(data)
 
   return(
-    <>
-      <Title title="Služby" size={titleSize.H2}/>
-      <InlineGridWrapper >
-        {text.service.map((item:IServiceCardItem) => 
+    <div id={data.id}>
+      <Title title={data.title} size={titleSize.H2} />
+      <InlineGridWrapper>
+        {data.services.map((item:IServiceCardItem) => 
           <Card ref={addToRefs} key={item.id} title={item.title} items={item.items} svgItem={SVGS[item.id as keyof ISVGS]} content={item.content} />
         )}
       </InlineGridWrapper>
-    </>
+    </div>
   )
 }
 

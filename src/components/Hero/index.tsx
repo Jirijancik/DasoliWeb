@@ -8,45 +8,30 @@ import {
 } from './hero.styles'
 import {StyledImage} from './components/StyledImage'
 import image from '../../assets/images/pavla.png';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/logo_kdp-PNG.png';
 
-type HeroProps = {
-  text: [{
+type IHeroProps = {
+  data: {
     title: string,
+    id: string,
+    heroTitle: string,
     paragraph:string,
-  }];
+  };
 }
 
 
-const Hero: React.FC<HeroProps> = ({ text }) => {
-  const [currentScreen, setScreen] = useState(0);
+const Hero: React.FC<IHeroProps> = ({ data }) => {
 
   let doLogicOnClick = () => console.log("....code logic....");
 
-  useEffect(() => {
-    let toggleScreens = () => {
-      let screensAmount = text.length;
-      (screensAmount > currentScreen+1) ? 
-      setScreen(currentScreen +1) : 
-      setScreen(0);
-    }
-    
-    let interval = setInterval(() => {
-      toggleScreens()
-    }, 5000)
-    return () => {
-      clearInterval(interval)
-    }
-  }, [currentScreen, text.length])
-
   return(
-    <HeroHeader>
+    <HeroHeader id={data.id}>
       <Wrapper>
         <Header> 
-          { text[currentScreen].title }
+          { data.heroTitle }
         </Header>
         <p>
-        { text[currentScreen].paragraph }
+        { data.paragraph }
         </p>
         <Button 
           buttonType = { buttonTypes.PRIMARY } 
@@ -58,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ text }) => {
       </Wrapper>
       
 
-      <StyledImage width={600} height={600} opacity={0.1} translateX="20%" mirrored={true} src = { logo } alt = "Dasoli Logo"/>
+      <StyledImage width={400} height={400} opacity={0.075} translateX="45%" translateY="25%" mirrored={true} src={ logo } alt = "Dasoli Logo"/>
       <StyledImage src = { image } alt = "Pavla Sojová"/>
     </HeroHeader>
   )

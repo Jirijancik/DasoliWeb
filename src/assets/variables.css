@@ -20,11 +20,15 @@
 	--WHITE_BACKGROUND: var(--WHITE);
 	--HERO-GRADIENT: linear-gradient(295deg, rgba(44,53,133,1) 0%, rgba(18,18,18,1) 100%);
 	--CARD-GRADIENT: linear-gradient(0deg, rgba(44,53,133,1) 0%, rgba(18,18,18,1) 60%);
+	--NAVBAR-GRADIENT: linear-gradient(220deg, rgba(44,53,133,1) 60%, rgba(18,18,18,1) 97%);
 	--WHITE_PAPER_BACKGROUND: linear-gradient(295deg, rgb(26, 32, 80) 0%, rgba(18,18,18,1) 75%);
 
 	/*Main Font*/
 	--MAIN-FONT: 'Roboto Condensed', sans-serif;
 	--BASE-FONT-SIZE: 16px;
 	--H2-SIZE: 2rem;
-	--H3-SIZE: 1.5rem;
+	--H3-SIZE: 1.35rem;
+	--H3-SIZE: 1.2rem;
+
+	--NAVBAR-HEIGHT: 90px; 
 }

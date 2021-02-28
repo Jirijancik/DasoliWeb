@@ -12,7 +12,8 @@ interface IClientsSection {
   data: IData
 }
 interface IData {
-  title: string
+  title: string,
+  id: string,
   reviews: Review[]
 }
 
@@ -28,6 +29,7 @@ const ClientsSection:React.FC<IClientsSection> = ({data}) => {
   const {
     title,
     reviews,
+    id,
   } = data;
 
   gsap.registerPlugin(ScrollTrigger);
@@ -50,7 +52,7 @@ const ClientsSection:React.FC<IClientsSection> = ({data}) => {
   }, [])
 
   return(
-    <div>
+    <div id={id}>
       <Title title={title} size={titleSize.H2}/>
       <InlineGridWrapper ref={el => cardsRef = el}>
         {reviews.map( item => {

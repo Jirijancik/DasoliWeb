@@ -10,7 +10,7 @@ export const StyledCard = styled.button`
   grid-gap: 2rem;
   border-radius: 8px;
   box-shadow: 0px 0px 4px -1px black;
-  width: 21rem;
+  width: 20rem;
   height: 25rem;
   place-self: center;
   text-align: left;

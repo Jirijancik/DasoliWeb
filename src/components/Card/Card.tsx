@@ -32,7 +32,7 @@ export const Card = React.forwardRef<HTMLButtonElement, ICardProps>(
 
   useEffect(() => {
     setShowAnimation(
-    TweenMax.fromTo(cardDetailRef, .8,{  
+    TweenMax.fromTo(cardDetailRef, 1.5,{  
       opacity: 0, 
       ease: Power3.easeOut, 
     },  {  

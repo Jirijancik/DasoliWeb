@@ -17,7 +17,6 @@ const Counter: React.FC<any> = (props) => {
 
   useEffect(() => {
     if(props.isVisible){
-      console.log("STARTED", props.isVisible)
     let start = 0;
     // first three numbers from props
     const end = parseInt(number.substring(0,3))
@@ -42,7 +41,7 @@ const Counter: React.FC<any> = (props) => {
 
   return (
     <CounterWrapper>
-        <h4 style={{display: "inline-block", fontSize: "var(--H3-SIZE)"}}>{label}</h4>
+        <h4 style={{display: "inline-block", fontSize: "var(--H3-SIZE)", fontWeight: "bold"}}>{label}</h4>
         <div style={{display: "inline-block", fontSize: "var(--H3-SIZE)"}}>{count}</div>
     </CounterWrapper>
   );
