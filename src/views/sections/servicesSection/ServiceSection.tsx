@@ -1,10 +1,7 @@
 import React, {useRef, useEffect, useState} from 'react';
 
-import Hero from '../../../components/Hero';
 import {Card} from '../../../components/Card';
-import { GlobalStyle } from '../../../utils/global.styles';
 import { InlineGridWrapper } from '../../../utils/wrapper.styles';
-import Paper from '../../../components/Paper';
 import Title from '../../../components/Title';
 import { titleSize } from "../../../components/Title/title.styles";
 import AccountingSvg from '../../../assets/images/svgAssets/AccountingSvg';
@@ -12,7 +9,7 @@ import TaxSvg from '../../../assets/images/svgAssets/TaxSvg';
 import SalarySvg from '../../../assets/images/svgAssets/SalarySvg';
 import EducationSvg from '../../../assets/images/svgAssets/EducationSvg';
 
-import {TweenMax, gsap, Power3} from 'gsap'
+import {TweenMax, Power3} from 'gsap'
 
 interface ISVGS {
   accounting: React.ReactNode,
@@ -69,8 +66,6 @@ const ServiceSection: React.FC<HeroProps> = ({data}) => {
       ease: Power3.easeOut, 
     }))
   }, [cardsRef])
-
-  console.log(data)
 
   return(
     <div id={data.id}>

@@ -1,11 +1,11 @@
-import React, {useRef, useEffect, MutableRefObject} from 'react';
+import React, {useRef, useEffect} from 'react';
 
 import {Citation} from '../../../components/Citation';
 import Title from '../../../components/Title';
 import { titleSize } from "../../../components/Title/title.styles";
 import { InlineGridWrapper } from '../../../utils/wrapper.styles';
 
-import {TweenMax, gsap} from 'gsap';
+import {gsap} from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 interface IClientsSection {

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import imageSVG from '../../assets/images/HeroSVG.svg';
 
 export const HeroHeader = styled.div`
 margin-top: var(--NAVBAR-HEIGHT);

@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState, useCallback} from 'react';
+import React from 'react';
 import Accordeon from '../../../components/Accordeon/Accordeon';
 import Title from '../../../components/Title';
 import { titleSize } from "../../../components/Title/title.styles";

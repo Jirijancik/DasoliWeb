@@ -1,12 +1,7 @@
 import React from 'react';
-
-
 import Paper from '../../../components/Paper';
 import Title from '../../../components/Title';
-
 import { titleSize } from "../../../components/Title/title.styles";
-
-let text = require('../../../assets/localization/cs_CZ.json');
 
 
 type IAboutUsSection = {

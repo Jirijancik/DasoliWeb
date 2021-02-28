@@ -3,8 +3,6 @@ import React from 'react';
 import Hero from './components/Hero';
 import Map from './components/Map';
 import { GlobalStyle } from './utils/global.styles';
-import { InlineGridWrapper } from './utils/wrapper.styles';
-import Paper from './components/Paper';
 import AboutUsSection from "./views/sections/aboutUsSection/AboutUsSection";
 import ClientsSection from "./views/sections/clientsSection/ClientsSection";
 import CounterSection from "./views/sections/counterSection/CounterSection";

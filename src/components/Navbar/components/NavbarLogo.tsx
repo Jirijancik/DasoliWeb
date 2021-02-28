@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { StyledLink } from "./StyledLink";
 import logo from '../../../assets/logo_kdp-PNG.png';
 import styled from 'styled-components';
