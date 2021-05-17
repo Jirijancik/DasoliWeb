@@ -5,8 +5,10 @@ export const GridWrapper = styled.div`
   grid-template-areas: 
     "text text"
     ". ."
-    "image name"
-    "image description";
+    "name name"
+    "description description"
+    "image image"
+    ;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr 2rem auto auto;
   align-items: end;

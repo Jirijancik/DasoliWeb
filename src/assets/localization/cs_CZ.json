@@ -45,69 +45,55 @@
     "id": "clients",
     "reviews":[{
       "id": 1,
-      "citationText": "I had a difficult time tracking what was business expenses vs. what was personal. I also like to leave everything to the last minute. I was in a bind and I called UDTH Accounting. They were able to back track for the entire year and provide my accountant with something to work with. Thanks!",
-      "personName": "Karl Terry",
-      "personDescription": "CEO of YogaSports",
-      "personImageUrl": "assets/images/clientAvatars/man.png"
+      "citationText": "S Firmou DASOLI a zejména s její majitelkou p.Pavlou Sojovou intenzivně spolupracujeme od roku 2006. Daňové poradenství nám je poskytováno jak na fyzické osoby, tak pro několik firem. Odbornost, pečlivost, profesionalita, velmi milé a lidské chování, a také nadhled nad mnohdy nepřehlednými daňovými aspekty, je to, co nás nepřestává překvapovat. Děkujeme p.Sojové i celému jejímu kolektivu za skvělou spolupráci.",
+      "personName": "Jaroslav a Denisa Michaliskovi",
+      "personDescription": "Opavská obchodní společnost",
+      "personImageUrl": "assets/images/clientsLogo/AndrlaAvatar.jpg"
     },    
     {
       "id": 2,
-      "citationText": "I do any kind of work and get paid in all different ways. UDTH Accounting helped me to set up less expensive payment terminals than options like square and clover.",
-      "personName": "Alister June",
-      "personDescription": "Freelancer",
-      "personImageUrl": "assets/images/clientAvatars/girl.png"
+      "citationText": "S Dasoli spolupracuje nezisková organizace Spirála Ostrava již x (zde nevím doplníte?) let. Zvládli jsme spolu i přechod na plátce DPH a díky nim jsme vždy měli na koho se obrátit v komplikovaných vodách účetnictví neziskovek.",
+      "personName": "Eva Krestová",
+      "personDescription": "Spirála Ostrava",
+      "personImageUrl": "assets/images/clientsLogo/SpiralaLogo2.png"
     },    
     {
       "id": 3,
-      "citationText": "My law firm found UDTH Accounting as an opportunity to know a trusted bookkeeping firm. It's hard to find decent bookkeepers that will do what they say with will. With UDTH Accounting, we got reports on time and our data was also correct.",
-      "personName": "Serena Gillian",
-      "personDescription": "Doctor",
-      "personImageUrl": "assets/images/clientAvatars/girlTwo.png"
-    },    
-    {
-      "id": 4,
-      "citationText": "I don't have a huge business, but i needed a firm to track my travel expenses, invoice my clients and make sure I got paid. UDTH did that for me and more. They are a great team and easy to collaborate with.",
-      "personName": "Alice Trueman",
-      "personDescription": "Graphic Designer",
-      "personImageUrl": "assets/images/clientAvatars/girlThree.png"
-    },
-    {
-      "id": 5,
-      "citationText": "I don't have a huge business, but i needed a firm to track my travel expenses, like to leave everything to the last minute. I was in a bind and I called UDTH Accounting. They were able to back trac invoice my clients and make sure I got paid.opportunity to know a trusted bookkeeping firm. It's hard to find decent bookkeepers that will do what they say with will. With  UDTH did that for me and more. They are a great team and easy to collaborate with.",
-      "personName": "Joe Doe",
-      "personDescription": "Developer",
-      "personImageUrl": "assets/images/clientAvatars/manTwo.png"
+      "citationText": "Po více než šesti letech  spolupráce jsme s firmou Dasoli stále velmi spokojeni. Oceňujeme profesionální přístup, šíři pracovního pokrytí, připravenost a příjemné jednání. Na firmu Dasoli se můžeme spolehnout!",
+      "personName": "Zuzana Přecechtělová",
+      "personDescription": "OPAMETAL s.r.o.",
+      "personImageUrl": "assets/images/clientsLogo/OpametalLogo.png"
     }
   ]},
   "counts": [
     {
       "id": "001",
       "label": "Klientů",
-      "number": "276",
+      "number": "130",
       "duration": "3"
     },
     {
       "id": "002",
       "label": "Měst",
-      "number": "3",
-      "duration": "4"
+      "number": "2",
+      "duration": "5"
     },
     {
       "id": "003",
       "label": "Let",
-      "number": "12",
-      "duration": "4"
+      "number": "30",
+      "duration": "3"
     },
     {
       "id": "004",
       "label": "Faktur",
-      "number": "52800",
+      "number": "102800",
       "duration": "2"
     },
     {
       "id": "005",
       "label": "Firem",
-      "number": "68",
+      "number": "80",
       "duration": "4"
     }
   ],  

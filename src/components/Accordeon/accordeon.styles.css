@@ -1,85 +1,92 @@
 .accordeon {
-  position:relative;
-  top:50px;
-  width:80vw;
-  margin:0 auto;
-  box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.25);
+  position: relative;
+  top: 50px;
+  width: 80vw;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 .item {
-  position:relative;
-  width:80vw;
-  min-height:40px;
-  margin:2px 0;
+  position: relative;
+  width: 80vw;
+  min-height: 40px;
+  margin: 2px 0;
 }
-input[type="radio"], input[type="radio"] + label {
-  position:absolute;
+input[type="radio"],
+input[type="radio"] + label {
+  position: absolute;
   width: calc(100% - 25px);
-  height:40px;
+  height: 30px;
   padding-left: 25px;
+  padding-top: 10px;
 }
 input[type="radio"] {
-  opacity:0;
-  z-index:9;
-  cursor:pointer;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
 }
 input[type="radio"] + label {
-  background:#f5f3f2;
-  background-repeat:no-repeat;
-  background-position:100% 0%;
-  font-size:1.4rem;
-  color:#333;
-  z-index:8;
+  background: #f5f3f2;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  font-size: 1.4rem;
+  color: #333;
+  z-index: 8;
 }
-article[id^="content-"] { /* more or individual styling can be applied by using id$="number" */
-  position:relative;
-  width:auto;
-  height:auto;
-  max-height:0px;
-  background:white;
-  overflow:hidden;
-  -webkit-transition:all .25s;
-  -moz-transition:all .25s;
-  -o-transition:all .25s;
-  transition:all .25s;
+article[id^="content-"] {
+  /* more or individual styling can be applied by using id$="number" */
+  position: relative;
+  width: auto;
+  height: auto;
+  max-height: 0px;
+  background: white;
+  overflow: hidden;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 }
 article[id^="content-"]:before {
-  content:'';
-  position:absolute;
-  top:35px;
-  left:15px;
-  width:0;
-  height:2px;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  width: 0;
+  height: 2px;
   z-index: 800;
-  background:var(--ORANGE);
-  -webkit-transition:width 0s;
-  -moz-transition:width 0s;
-  -o-transition:width 0s;
-  transition:width 0s;
+  background: var(--ORANGE);
+  -webkit-transition: width 0s;
+  -moz-transition: width 0s;
+  -o-transition: width 0s;
+  transition: width 0s;
 }
 input[type="radio"]:hover + label {
-  background:#fff;
-  background-repeat:no-repeat;
-  background-position:100% 0%;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: all 0.25s;
 }
-input[type="radio"]:checked + label {background:white;}
+input[type="radio"]:checked + label {
+  background: white;
+  transition: all 0.25s;
+}
 input[type="radio"]:checked ~ article[id^="content-"] {
-  height:auto;
-  max-height:600px;
-  padding:55px 25px 25px 25px;
-  -webkit-transition:all .25s .25s;
-  -moz-transition:all .25s .25s;
-  -o-transition:all .25s .25s;
-  transition:all .25s .25s;
+  height: auto;
+  max-height: 600px;
+  padding: 55px 25px 25px 25px;
+  -webkit-transition: all 0.25s 0.25s;
+  -moz-transition: all 0.25s 0.25s;
+  -o-transition: all 0.25s 0.25s;
+  transition: all 0.25s 0.25s;
 }
 input[type="radio"]:checked ~ article[id^="content-"]:before {
-  width:50px;
-  -webkit-transition:width .3s .3s;
-  -moz-transition:width .3s .3s;
-  -o-transition:width .3s .3s;
-  transition:width .3s .3s;
+  width: 70px;
+  -webkit-transition: width 0.3s 0.3s;
+  -moz-transition: width 0.3s 0.3s;
+  -o-transition: width 0.3s 0.3s;
+  transition: width 0.3s 0.3s;
 }
 em {
-  font-weight:300;
-  font-style:normal;
-  color:var(--ORANGE);
+  font-weight: 300;
+  font-style: normal;
+  color: var(--ORANGE);
 }
