@@ -90,7 +90,13 @@ const ClientsSection: React.FC<IClientsSection> = ({ data }) => {
         }}
       >
         {LOGOS.map((item: any) => (
-          <StyledAvatar width={200} height={170} src={item} key={item} />
+          <StyledAvatar
+            width={200}
+            height={170}
+            src={item}
+            key={item}
+            alt='Client Logo'
+          />
         ))}
       </Carousel>
     </div>

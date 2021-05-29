@@ -21,7 +21,10 @@ export const Citation = React.forwardRef<HTMLDivElement, ICitation>(
           {personDescription}
         </div>
         {personImageUrl && (
-          <StyledAvatar src={personImageUrl} alt={`Avatar of ${personName}`} />
+          <StyledAvatar
+            src={personImageUrl}
+            alt={`Client logo of ${personName}`}
+          />
         )}
       </GridWrapper>
     );
