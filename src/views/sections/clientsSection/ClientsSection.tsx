@@ -7,7 +7,25 @@ import { InlineGridWrapper } from "../../../utils/wrapper.styles";
 
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { Carousel } from "components/Carousel/Carousel";
+import { StyledImage } from "components/Hero/components/StyledImage";
 
+import AndrlaLogo from "../../../assets/images/clientsLogo/AndrlaLogo.jpg";
+import AnimaLogo from "../../../assets/images/clientsLogo/logo ANIMA.png";
+import OOSLogo from "../../../assets/images/clientsLogo/logo OOS.jpg";
+import OpametalMainLogo from "../../../assets/images/clientsLogo/OpametalMainLogo.jpg";
+import NFPNLogo from "../../../assets/images/clientsLogo/NFPNLogo.jpg";
+import SpiralaLogo from "../../../assets/images/clientsLogo/SpiralaLogo.png";
+import { StyledAvatar } from "components/Citation/components/StyledAvatar";
+
+const LOGOS = [
+  AndrlaLogo,
+  AnimaLogo,
+  OOSLogo,
+  OpametalMainLogo,
+  NFPNLogo,
+  SpiralaLogo,
+];
 interface IClientsSection {
   data: IData;
 }
@@ -64,10 +82,17 @@ const ClientsSection: React.FC<IClientsSection> = ({ data }) => {
           );
         })}
       </InlineGridWrapper>
-      <div>
-        Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo
-        Logo Logo
-      </div>
+
+      <Carousel
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+      >
+        {LOGOS.map((item: any) => (
+          <StyledAvatar width={200} height={170} src={item} key={item} />
+        ))}
+      </Carousel>
     </div>
   );
 };

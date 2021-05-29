@@ -10,11 +10,10 @@ const NavbarLogo = styled.img`
   transition: transform 0.25s ease;
   width: 90px;
   height: 90px;
-  transform: scaleX(-1);
 
   &:hover {
     color: var(--ORANGE);
-    transform: scale(1.05) scaleX(-1);
+    transform: scale(1.05);
     filter: drop-shadow(2px 0px 4px rgba(var(--base_orange_code), 0.25));
     transition: transform 0.25s ease;
   }

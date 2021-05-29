@@ -28,8 +28,7 @@ input[type="radio"] + label {
   background: #f5f3f2;
   background-repeat: no-repeat;
   background-position: 100% 0%;
-  font-size: 1.4rem;
-  color: #333;
+  font-size: clamp(0.7rem, calc(4vw - 1rem), 1.3rem);
   z-index: 8;
 }
 article[id^="content-"] {

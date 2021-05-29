@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const InlineGridWrapper = styled.div`
   display: flex;
@@ -6,5 +6,5 @@ export const InlineGridWrapper = styled.div`
   justify-content: space-evenly;
   grid-gap: 1.3rem;
   background-color: inherit;
-  margin: 0 5%;
-`
+  margin: 0 0%;
+`;
