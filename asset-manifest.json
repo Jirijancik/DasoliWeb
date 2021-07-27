@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DasoliWeb/static/css/main.7e0b68f1.chunk.css",
-    "main.js": "/DasoliWeb/static/js/main.ea1a16f6.chunk.js",
-    "main.js.map": "/DasoliWeb/static/js/main.ea1a16f6.chunk.js.map",
+    "main.js": "/DasoliWeb/static/js/main.ba02443c.chunk.js",
+    "main.js.map": "/DasoliWeb/static/js/main.ba02443c.chunk.js.map",
     "runtime-main.js": "/DasoliWeb/static/js/runtime-main.71b04b45.js",
     "runtime-main.js.map": "/DasoliWeb/static/js/runtime-main.71b04b45.js.map",
     "static/css/2.c44756e0.chunk.css": "/DasoliWeb/static/css/2.c44756e0.chunk.css",
@@ -37,6 +37,6 @@
     "static/css/2.c44756e0.chunk.css",
     "static/js/2.557f19da.chunk.js",
     "static/css/main.7e0b68f1.chunk.css",
-    "static/js/main.ea1a16f6.chunk.js"
+    "static/js/main.ba02443c.chunk.js"
   ]
 }
