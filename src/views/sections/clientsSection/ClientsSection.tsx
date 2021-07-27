@@ -8,8 +8,6 @@ import { InlineGridWrapper } from "../../../utils/wrapper.styles";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Carousel } from "components/Carousel/Carousel";
-import { StyledImage } from "components/Hero/components/StyledImage";
-
 import AndrlaLogo from "../../../assets/images/clientsLogo/AndrlaLogo.jpg";
 import AnimaLogo from "../../../assets/images/clientsLogo/logo ANIMA.png";
 import OOSLogo from "../../../assets/images/clientsLogo/logo OOS.jpg";

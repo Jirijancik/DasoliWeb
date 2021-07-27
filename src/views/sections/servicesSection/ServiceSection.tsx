@@ -47,7 +47,7 @@ const ServiceSection: React.FC<HeroProps> = ({ data }) => {
   let cardsRef = useRef() as any;
   cardsRef.current = [];
 
-  const [animation, setAnimation] = useState<any>(null);
+  const [_, setAnimation] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false);
   const window = useWindowSize();
 

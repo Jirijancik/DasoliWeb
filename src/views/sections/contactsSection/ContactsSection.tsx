@@ -1,6 +1,4 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
-import { InlineGridWrapper } from "../../../utils/wrapper.styles";
-import Paper from "../../../components/Paper";
 import Map from "../../../components/Map";
 import { StyledContractsDetail } from "./components/StyledContractsDetail";
 
@@ -9,7 +7,7 @@ let text = require("../../../assets/localization/cs_CZ.json");
 const ContactsSection: React.FC = () => {
   const hiddenRef = useRef() as React.MutableRefObject<HTMLDivElement>;
 
-  const [isVisible, setIsVisible] = useState(false);
+  const [_, setIsVisible] = useState(false);
 
   const scrollHandler = useCallback(() => {
     if (hiddenRef) {

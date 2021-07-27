@@ -3,9 +3,6 @@ import Accordeon from '../../../components/Accordeon/Accordeon';
 import Title from '../../../components/Title';
 import { titleSize } from "../../../components/Title/title.styles";
 
-
-
-
 type HeroProps = {
   data: {
     title: string,

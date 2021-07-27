@@ -15,7 +15,7 @@ type IAccordeonProps = {
 const Accordeon: React.FC<IAccordeonProps> = ({ items }) => {
   const [value, setValue] = useState(items[0]?.question);
 
-  const handleOnClick = (e: React.MouseEvent<HTMLInputElement>) => {
+  const handleOnClick = (e: React.FormEvent<HTMLInputElement>) => {
     setValue(e.currentTarget.value);
   };
 
@@ -28,10 +28,10 @@ const Accordeon: React.FC<IAccordeonProps> = ({ items }) => {
               name={item.question}
               value={item.question}
               key={item.id}
-              handleOnClick={handleOnClick}
+              onClick={handleOnClick}
+              currentChecked={value}
               title={item.question}
               text={item.answer}
-              defaultChecked={value === item.question}
             />
           );
         })}

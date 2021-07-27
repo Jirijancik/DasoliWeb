@@ -4,18 +4,17 @@ import "../accordeon.styles.css";
 type AccordeonItemProps = {
   readonly name: string;
   readonly value: string;
-
-  readonly defaultChecked: boolean;
-  title: string;
-  text: string;
-  handleOnClick: (e: React.MouseEvent<HTMLInputElement>) => void;
+  readonly currentChecked: string;
+  readonly title: string;
+  readonly text: string;
+  onClick: (e: React.FormEvent<HTMLInputElement>) => void;
 };
 
 export const AccordeonItem: React.FC<AccordeonItemProps> = (props) => {
-  const { name, value, defaultChecked, title, text, handleOnClick } = props;
+  const { name, value, title, text, onClick, currentChecked } = props;
 
-  const handleOnClickx = (e: React.MouseEvent<HTMLInputElement>) => {
-    handleOnClick(e);
+  const handleOnClick = (e: React.FormEvent<HTMLInputElement>) => {
+    onClick(e);
   };
 
   return (
@@ -24,8 +23,9 @@ export const AccordeonItem: React.FC<AccordeonItemProps> = (props) => {
         type="radio"
         name={name}
         value={value}
-        onClick={handleOnClickx}
-        defaultChecked={defaultChecked}
+        onClick={handleOnClick}
+        onChange={handleOnClick}
+        checked={value === currentChecked}
       />
       <label htmlFor={name} className="entypo-">
         {title}
