@@ -7,14 +7,12 @@ import { StyledNavbarLogo } from "./components/NavbarLogo";
 
 let text = require('../../assets/localization/cs_CZ.json');
 
-type INavbar = {
-
-}
+type INavbar = {}
 
 export const Navbar: React.FC<INavbar> = () => {  
 
   return(
-  <React.Fragment>
+  <>
     <StyledNavbar>
       <StyledNavbarLogo/>
           <StyledList>
@@ -26,9 +24,6 @@ export const Navbar: React.FC<INavbar> = () => {
             )}
           </StyledList>
     </StyledNavbar>
-     
-
-    
-  </React.Fragment>
+  </>
 )}
 

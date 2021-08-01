@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import { Citation } from "../../../components/Citation";
 import Title from "../../../components/Title";
@@ -15,6 +15,7 @@ import OpametalMainLogo from "../../../assets/images/clientsLogo/OpametalMainLog
 import NFPNLogo from "../../../assets/images/clientsLogo/NFPNLogo.jpg";
 import SpiralaLogo from "../../../assets/images/clientsLogo/SpiralaLogo.png";
 import { StyledAvatar } from "components/Citation/components/StyledAvatar";
+import { useWindowSize } from "utils/hooks/useWindowSize";
 
 const LOGOS = [
   AndrlaLogo,
@@ -44,10 +45,23 @@ interface Review {
 const ClientsSection: React.FC<IClientsSection> = ({ data }) => {
   const { title, reviews, id } = data;
 
+  const [isMobile, setIsMobile] = useState(false);
+  const window = useWindowSize();
+
+  const carouselAutoplayOptions = {
+    delay: 2000,
+    disableOnInteraction: false,
+  }
+
   gsap.registerPlugin(ScrollTrigger);
 
   let cardsRef = useRef() as any;
   cardsRef.current = [];
+
+
+  useEffect(() => {
+    window.width && window.width > 750 ? setIsMobile(false) : setIsMobile(true);
+  }, [window.width]);
 
   useEffect(() => {
     ScrollTrigger.defaults({
@@ -66,26 +80,44 @@ const ClientsSection: React.FC<IClientsSection> = ({ data }) => {
   return (
     <div id={id}>
       <Title title={title} size={titleSize.H2} />
-      <InlineGridWrapper ref={(el) => (cardsRef = el)}>
-        {reviews.map((item) => {
-          const image = require("../../../" + item.personImageUrl);
-          return (
-            <Citation
-              citationText={item.citationText}
-              personName={item.personName}
-              key={item.id}
-              personDescription={item.personDescription}
-              personImageUrl={image.default}
-            />
-          );
-        })}
-      </InlineGridWrapper>
+
+        {!isMobile ? <InlineGridWrapper ref={(el) => (cardsRef = el)}>
+          {reviews.map((item) => {
+            const image = require("../../../" + item.personImageUrl);
+            return (
+              <Citation
+                citationText={item.citationText}
+                personName={item.personName}
+                key={item.id}
+                personDescription={item.personDescription}
+                personImageUrl={image.default}
+              />
+            );
+          })}
+        </InlineGridWrapper>: 
+        <Carousel
+        autoplay={carouselAutoplayOptions}
+        >
+          {reviews.map((item) => {
+            const image = require("../../../" + item.personImageUrl);
+            return (
+              <Citation
+                citationText={item.citationText}
+                personName={item.personName}
+                key={item.id}
+                personDescription={item.personDescription}
+                personImageUrl={image.default}
+              />
+            );
+          })}
+        </Carousel>
+        }
+  
+
+
 
       <Carousel
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        autoplay={carouselAutoplayOptions}
       >
         {LOGOS.map((item: any) => (
           <StyledAvatar
