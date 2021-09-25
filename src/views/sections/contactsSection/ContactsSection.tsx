@@ -30,9 +30,11 @@ const ContactsSection: React.FC = () => {
     <div ref={hiddenRef} style={{ position: "relative" }}>
       <Map />
       <StyledContractsDetail>
-        <div>Dasoli s.r.o. - Opava</div>
-        <div>Masařská 8</div>
-        <div>Tel: +42075632111</div>
+        <h3>Pavla Sojová</h3>
+        <div>Tel: +420 602 531 199</div>
+        <div>Email: sojova@dasoli.cz</div>
+        <div>Ičo: 48828343</div>
+        <div>Adresa: Gagarinova 2857/13, Opava</div>
       </StyledContractsDetail>
     </div>
   );
