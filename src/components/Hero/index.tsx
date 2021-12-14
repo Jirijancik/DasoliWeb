@@ -1,11 +1,9 @@
 import React from "react";
-import Button from "../Button";
-import { buttonTypes, buttonSize } from "../Button/enum";
-import { HeroHeader, Wrapper, Header } from "./hero.styles";
-import { StyledImage } from "./components/StyledImage";
+import { useWindowSize } from "utils/hooks/useWindowSize";
 import image from "../../assets/images/pavla.png";
 import logo from "../../assets/logo_kdp-PNG.png";
-import { useWindowSize } from "utils/hooks/useWindowSize";
+import { StyledImage } from "./components/StyledImage";
+import { Header, HeroHeader, Title, Wrapper } from "./hero.styles";
 
 type IHeroProps = {
   data: {
@@ -17,7 +15,6 @@ type IHeroProps = {
 };
 
 const Hero: React.FC<IHeroProps> = ({ data }) => {
-  let doLogicOnClick = () => console.log("....code logic....");
   const window = useWindowSize();
 
   const setImageVisibility = () =>
@@ -28,13 +25,19 @@ const Hero: React.FC<IHeroProps> = ({ data }) => {
       <Wrapper>
         <Header>{data.heroTitle}</Header>
         <p>{data.paragraph}</p>
-        <Button
-          buttonType={buttonTypes.PRIMARY}
-          size={buttonSize.XXL}
-          handleOnClick={doLogicOnClick}
-        >
-          Zjisti víc
-        </Button>
+        <div>
+          <Title >POZOR: </Title>
+          <div style={{color: "white"}}>
+            Ve dnech <em style={{fontWeight: 600, color: "orangered"}}>22.-31.12</em>
+            <br />
+            bude kancelář uzavřena 
+            <br />
+            z důvodů vánočních svátků
+            <br />
+            Přejeme příjemné Vánoce
+            a těšíme se na Vás v roce 2022
+          </div>
+        </div>
       </Wrapper>
 
       <StyledImage

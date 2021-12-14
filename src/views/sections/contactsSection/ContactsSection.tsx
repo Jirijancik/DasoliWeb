@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Map from "../../../components/Map";
 import { StyledContractsDetail } from "./components/StyledContractsDetail";
 
@@ -33,7 +33,7 @@ const ContactsSection: React.FC = () => {
         <h3>Pavla Sojová</h3>
         <div>Tel: +420 602 531 199</div>
         <div>Email: sojova@dasoli.cz</div>
-        <div>Ičo: 48828343</div>
+        <div>IČO: 27836975</div>
         <div>Adresa: Gagarinova 2857/13, Opava</div>
       </StyledContractsDetail>
     </div>

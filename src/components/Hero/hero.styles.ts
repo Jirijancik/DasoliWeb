@@ -36,3 +36,8 @@ export const Header = styled.h1`
   color: var(--WHITE);
   background-color: inherit;
 `
+export const Title = styled.section`
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--ORANGE);
+`

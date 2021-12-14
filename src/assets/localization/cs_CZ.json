@@ -3,7 +3,7 @@
   {
     "id": "dasoli",
     "heroTitle":"Vaše daně, naše práce!",
-    "paragraph":"Patříme k osvědčeným odborníkům na daně a učetnictví v Moravskoslzeském kraji!"
+    "paragraph":"Patříme k osvědčeným odborníkům na daně a učetnictví v Moravskoslezském kraji!"
   },
   "service":{
     "title": "Služby",
@@ -18,7 +18,7 @@
       {
         "id":"tax",
         "title":"Daňové poradenství",
-        "items":["Zastupovaní při daňových kontrolách ", "Jednání se státní správou", "Zastupování u soudu", "Zpracovávání daňových přitnání"],
+        "items":["Zastupovaní při daňových kontrolách ", "Jednání se státní správou", "Zastupování u soudu", "Zpracovávání daňových přiznání"],
         "content": "Daňové poradenství nám není cizí – preferujeme individuální přístup, konzultace proto probíhají dle potřeb klienta. Pokud řešíte jednorázový problém, neváhejte se ozvat. Nabízíme jednorázové konzultace, nebo trvalou spolupráci. Vše s vámi dopodrobna probereme."
       },
       {
@@ -31,7 +31,7 @@
         "id":"education",
         "title":"Školení",
         "items":["Lektorská činnost na specifická témata", "Možnost online školení", "Pravidelná setkávání klubu účetních"],
-        "content":"Nabízíme školení v oblasti účetnictví a daní, rádi se podělíme o své zkušenosti a znalosti. Školení jsou šitá na míru podle požadavků našich klientů, abychom docílili co nejlepších výsledků a předali opravdu užitečné informace. Pokud jste z oboru a potřebujte poradit se specifickým problémem, neváhejte využít i našich individuálních konzultací."
+        "content":"Nabízíme školení v oblasti účetnictví a daní, rádi se podělíme o své zkušenosti a znalosti. Školení jsou šitá na míru podle požadavků našich klientů, abychom docílili co nejlepších výsledků a předali opravdu užitečné informace. Pokud jste z oboru a potřebujete poradit se specifickým problémem, neváhejte využít i našich individuálních konzultací."
       }
     ]
   },
@@ -52,7 +52,7 @@
     },    
     {
       "id": 2,
-      "citationText": "S Dasoli spolupracuje nezisková organizace Spirála Ostrava již x (zde nevím doplníte?) let. Zvládli jsme spolu i přechod na plátce DPH a díky nim jsme vždy měli na koho se obrátit v komplikovaných vodách účetnictví neziskovek.",
+      "citationText": "S Dasoli spolupracuje nezisková organizace Spirála Ostrava již 6 let. Zvládli jsme spolu i přechod na plátce DPH a díky nim jsme vždy měli na koho se obrátit v komplikovaných vodách účetnictví neziskovek.",
       "personName": "Eva Krestová",
       "personDescription": "Spirála Ostrava",
       "personImageUrl": "assets/images/clientsLogo/SpiralaLogo2.png"
