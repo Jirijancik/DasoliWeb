@@ -3,7 +3,7 @@ import { useWindowSize } from "utils/hooks/useWindowSize";
 import image from "../../assets/images/pavla.png";
 import logo from "../../assets/logo_kdp-PNG.png";
 import { StyledImage } from "./components/StyledImage";
-import { Header, HeroHeader, Title, Wrapper } from "./hero.styles";
+import { Header, HeroHeader, Wrapper } from "./hero.styles";
 
 type IHeroProps = {
   data: {
@@ -25,19 +25,6 @@ const Hero: React.FC<IHeroProps> = ({ data }) => {
       <Wrapper>
         <Header>{data.heroTitle}</Header>
         <p>{data.paragraph}</p>
-        <div>
-          <Title >POZOR: </Title>
-          <div style={{color: "white"}}>
-            Ve dnech <em style={{fontWeight: 600, color: "orangered"}}>22.-31.12</em>
-            <br />
-            bude kancelář uzavřena 
-            <br />
-            z důvodů vánočních svátků
-            <br />
-            Přejeme příjemné Vánoce
-            a těšíme se na Vás v roce 2022
-          </div>
-        </div>
       </Wrapper>
 
       <StyledImage
